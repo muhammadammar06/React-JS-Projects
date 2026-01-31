@@ -1,0 +1,17 @@
+Oop
+Object and classes
+Encapsulation
+inheritance
+Types
+Function overriding
+Abstraction
+Polymorphism
+Traits
+Interface
+Abstract classes
+Type hinting Type declration
+Name space
+static
+late static
+const 
+final
