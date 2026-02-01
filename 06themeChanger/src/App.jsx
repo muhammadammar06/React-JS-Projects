@@ -1,14 +1,13 @@
 import { useState } from 'react'
 import ChildA from './Components/ChildA'
-import themeContext from './context/themeContext'
+import ThemeContextProvider from './context/themeContextProvider'
 
 function App() {
-  const [theme, setTheme] = useState("light");
   return (
     <>
-      <themeContext.Provider value={{theme, setTheme}}>
+      <ThemeContextProvider>
         <ChildA />    
-      </themeContext.Provider>
+      </ThemeContextProvider>
       
     </>
   )

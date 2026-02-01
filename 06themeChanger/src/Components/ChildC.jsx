@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+// import themeContextProvider from '../context/themeContextProvider'
 import themeContext from '../context/themeContext'
 
 function ChildC() {
