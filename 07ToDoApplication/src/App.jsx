@@ -12,15 +12,15 @@ function App() {
   };
 
   const deleteToDo = (id) =>{
-    setToDos((prev) => prev.filter((todo) => todo.id !== id));
+    setToDos(prev => prev.filter((todo) => todo.id !== id));
   };
 
   const updateToDo = (id, todo) =>{
-    setToDos((prev) => prev.map((prevtodo)=> (prevtodo.id == id ? todo : prevtodo)));
+    setToDos(prev => prev.map((prevtodo)=> (prevtodo.id == id ? todo : prevtodo)));
   };
 
   const toggleComplete = (id) => {
-    setToDos((prev) => prev.map((prevtodo)=> prevtodo.id === id ? {...prevtodo, completed : !prevtodo.completed} : prevtodo));
+    setToDos(prev => prev.map((prevtodo)=> prevtodo.id === id ? {...prevtodo, completed : !prevtodo.completed} : prevtodo));
   }
 
   useEffect(()=>{
